@@ -122,10 +122,6 @@ func (s XDGSurface) TopLevelSetTiled(edges Edges) {
 	C.wlr_xdg_toplevel_set_tiled(s.p, C.uint32_t(edges))
 }
 
-func (s XDGSurface) SendClose() {
-	C.wlr_xdg_surface_send_close(s.p)
-}
-
 func (s XDGSurface) Ping() {
 	C.wlr_xdg_surface_ping(s.p)
 }
