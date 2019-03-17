@@ -65,7 +65,7 @@ func (s Seat) SetKeyboard(dev InputDevice) {
 }
 
 func (s Seat) NotifyPointerButton(time uint32, button uint32, state ButtonState) {
-	C.wlr_seat_pointer_notify_button(s.p, C.uint32_t(time), C.uint32_t(button), C.uint32_t(state))
+	C.wlr_seat_pointer_notify_button(s.p, C.uint32_t(time), C.uint32_t(button), uint32(state))
 }
 
 func (s Seat) NotifyPointerAxis(time uint32, orientation AxisOrientation, delta float64, deltaDiscrete int32, source AxisSource) {
