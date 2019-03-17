@@ -5,7 +5,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/swaywm/go-wlroots/xkb"
+	"github.com/phoenixdevelops/go-wlroots/xkb"
 )
 
 type (

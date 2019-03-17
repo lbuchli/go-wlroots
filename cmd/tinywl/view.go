@@ -1,6 +1,6 @@
 package main
 
-import "github.com/swaywm/go-wlroots/wlroots"
+import "github.com/phoenixdevelops/go-wlroots/wlroots"
 
 type View struct {
 	surface wlroots.XDGSurface

@@ -1,11 +1,11 @@
-# go-wlroots [![Documentation](https://godoc.org/github.com/swaywm/go-wlroots/wlroots?status.svg)](https://godoc.org/github.com/swaywm/go-wlroots/wlroots)
+# go-wlroots fork
 
 __go-wlroots__ is a __WIP__ Go binding for
 [wlroots](https://github.com/swaywm/wlroots). Note: The API is incomplete and
 subject to change.
 
-To test go-wlroots I've ported [SirCmpwn's Tiny Wayland
-compositor](https://gist.github.com/ddevault/ae4d1cdcca97ffeb2c35f0878d75dc17) to it:
+To test go-wlroots [SirCmpwn's Tiny Wayland
+compositor](https://gist.github.com/ddevault/ae4d1cdcca97ffeb2c35f0878d75dc17) was ported to it:
 
 ![](https://alexbakker.me/u/a6v2nu16.png)
 
