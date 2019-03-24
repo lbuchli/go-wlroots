@@ -2,8 +2,13 @@ WAYLAND_PROTOCOLS=/usr/share/wayland-protocols
 
 all: tinywl
 
+hacky: hackywl
+
 tinywl: prep xdg-shell-protocol
 	go build -o build/bin/tinywl github.com/phoenixdevelops/go-wlroots/cmd/tinywl
+
+hackywl: prep xdg-shell-protocol
+	go build -o build/bin/hackywl github.com/phoenixdevelops/go-wlroots/cmd/hackywl
 
 xdg-shell-protocol:
 	wayland-scanner private-code $(WAYLAND_PROTOCOLS)/stable/xdg-shell/xdg-shell.xml wlroots/xdg-shell-protocol.c

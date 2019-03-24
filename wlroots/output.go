@@ -124,6 +124,11 @@ func (l OutputLayout) Coords(output Output) (x float64, y float64) {
 	return float64(ox), float64(oy)
 }
 
+func (l OutputLayout) OutputAt(x float64, y float64) Output {
+	output := C.wlr_output_layout_output_at(l.p, C.double(x), C.double(y))
+	return Output{p: output}
+}
+
 func OutputTransformInvert(transform uint32) uint32 {
 	return uint32(C.wlr_output_transform_invert(C.enum_wl_output_transform(transform)))
 }
