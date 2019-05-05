@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/phoenixdevelops/go-wlroots/wlroots"
+	"github.com/lbuchli/go-wlroots/wlroots"
 )
 
 var (
